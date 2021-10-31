@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Research Details - Mushfiqur Rahman Fahim</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html" class="logo">Mushfiqur Rahman Fahim</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="academics.html">Academics</a></li>
+											<li><a href="research.html">Research & Projects</a></li>
+											<li><a href="achievements.html">Achievements</a></li>
+											<li><a href="travelling.html">Travelling</a></li>
+											<li><a href="https://drive.google.com/file/d/1fBj7ngTN34WajYTqugDPhJOQu9ZwGg-p/view?usp=sharing" target="_blank" class="button primary fit">Academic CV</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+                <!-- Main -->
+					<article id="main">
+						<header>
+							<h2>TiO<sub>2</sub> - water nanofluid</h2>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+                                <h3><a class="button primary fit">Progress so far</a></h3>
+                                <p>In this project, TiO<sub>2</sub>-Water nanofluid is flown through a double pipe counter flow heat exchanger as a cooling agent to investigate the heat transfer coefficient of the nanofluid. The flow is simulated as a single phase flow for the ease of calculation. We will be simulating multiphase flow to find the effect of phase on the computational modeling of nanofluid.</p>
+                                <p>First, to validate our model, 0.2% nanoparticle concentration is used in the nanofluid, as it has been done in the experimental work of <i>Duangthongsuk</i> and <i>Wongwises</i> [1]</p>
+                                <p>Then, effects of reynolds number i.e. mass flow rate of the nanofluid along with the effects of different concertration will be tested in this work.
+                                    <i>Duangthongsuk</i> and <i>Wongwises</i> [1] didn't investigate the effects of particle concentration in the nanofluid.
+                                </p>
+                                <h4>Flow domain</h4>
+                                <p>The flow domain consists of three regions. First, the inner side of a copper pipe through which the nanofluid will flow. The copper itself is another region, which will be a solid region.
+                                    The last region will be another pipe covering the copper pipe through which the hot fluid i.e. water will flow.
+                                </p>
+                                <p>The copper pipe has an inner diameter of 8.13 mm and an outer diameter of 9.53 mm. The outer pipe has a diameter of 27.8 mm.</p>
+                                <div class="box alt">
+                                    <div class="row gtr-50 gtr-uniform">
+                                        <div class="col-6"><span class="image fit"><figure><img src="images/research2/flow domain.png" alt="" /><figcaption>Flow Domain</figcaption></figure></span></div>
+                                        <div class="col-6"><span class="image fit"><figure><img src="images/research2/inletoutlet.png" alt="" /><figcaption>Inlet of nanofluid and inlet of hot water are in opposite side</figcaption></figure></span></div>
+                                    </div>
+                                </div>
+                                <h4>Mesh models</h4>
+                                <ol>
+                                    <li>Surface remesher.</li>
+                                    <li>polyhedral for volume meshing.</li>
+                                    <li>Thin mesher.</li>
+                                    <li>Cylinder extrude mesher.</li>
+                                    <li>Prism layer mesher.</li>
+                                </ol>
+                                <div class="box alt">
+                                    <div class="row gtr-50 gtr-uniform">
+                                        <div class="col-6"><span class="image fit"><figure><img src="images/research2/mesh.png" alt="" /><figcaption>Cross section of mesh. Thin mesher is used for the thin copper pipe.</figcaption></figure></span></div>
+                                        <div class="col-6"><span class="image fit"><figure><img src="images/research2/residuals.png" alt="" /><figcaption>Residual shows a well converged solution. Where all of them are less than 10E-04 magnitude.</figcaption></figure></span></div>
+                                    </div>
+                                </div>
+                                <h4>Nanofluid properties</h4>
+                                <div class="table-wrapper">
+                                    <table class="alt">
+                                        <thead>
+                                            <tr>
+                                                <th>Nano Particle concentration</th>
+                                                <th>Density (kg/m<sup>3</sup>)</th>
+                                                <th>Viscosity (pa-s)</th>
+                                                <th>Specific Heat (J/kg-K)</th>
+                                                <th>Thermal Conductivity (W/m-K)</th>
+                                                <th>Prandtl Number</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0.2%</td>
+                                                <td>1004.09</td>
+                                                <td>8.93E-04</td>
+                                                <td>4152.11</td>
+                                                <td>0.6242</td>
+                                                <td>5.94</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.45%</td>
+                                                <td>1012.24</td>
+                                                <td>8.99E-04</td>
+                                                <td>4115.63</td>
+                                                <td>0.6293</td>
+                                                <td>5.88</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.6%</td>
+                                                <td>1017.14</td>
+                                                <td>9.02E-04</td>
+                                                <td>4094.03</td>
+                                                <td>0.6323</td>
+                                                <td>5.84</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1%</td>
+                                                <td>1030.19</td>
+                                                <td>9.11E-04</td>
+                                                <td>4037.41</td>
+                                                <td>0.6404</td>
+                                                <td>5.74</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p>Material properties are calculated using following equations.</p>
+                                <div class="box alt">
+                                    <div class="row gtr-50 gtr-uniform">
+                                        <div class="col-7"><span class="image fit"><figure><img src="images/research2/formulas1.PNG" alt="" /></figure></span></div>
+                                    </div>
+                                </div>
+                                <h4>Results</h4>
+                                <p>Finally, the are calculated using following equations.</p>
+                                <p>Heat flux of nanofluid is calculated using the classic heat transfer equation.<br/>
+                                    Q<sub>nf</sub>=m<sub>nf</sub>C<sub>p.nf</sub>(T<sub>out</sub> - T<sub>out</sub>)<br/>
+                                    Heat flux of hot water is calculated using the classic heat transfer equation.<br/>
+                                    Q<sub>w</sub>=m<sub>w</sub>C<sub>p.w</sub>(T<sub>out</sub> - T<sub>out</sub>)<br/>
+                                    Then their average is calcualted.<br/>
+                                    Q<sub>avg</sub>=(Q<sub>nf</sub>+Q<sub>w</sub>)/2<br/>
+                                </p>
+                                <p>Then the heat transfer coefficient is calculated using LMTD eqwuation.</p>
+                                <p><span style="font-size: larger;">Overall heat transfer coefficient is found to be <b>5.64+04</b> W/m<sup>2</sup>-K</span></p>
+                            </div>
+                        </article>
+    
+                    <!-- One -->
+                    <section class="wrapper alt style101">
+                        <section class="spotlight">
+                            <div class="image2">
+                                    <a class="icon solid fa-envelope"><span class="label">Email</span></a>
+                                    <p class="p"><a href="mailto: rahmanf247@gmail.com">rahmanf247@gmail.com</a><br/>
+                                    <a href="mailto: 1512014@name.buet.ac.bd">1512014@name.buet.ac.bd</a</p>
+                            </div>
+                            <div class="content1">
+                                <a class="icon solid alt fa-home"><span class="label">Home</span></a>
+                                <p class="p"> Mirpur Circle -1, Dhaka, Bangladesh</p>
+                            </div>
+                        </section>
+                    </section>	
+    
+                    <!-- Footer -->
+                        <footer id="footer">
+                            <ul class="icons">
+                                <li><a href="https://www.linkedin.com/in/mushfiqur-rahman-fahim-a5a802147/" target="_blank" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+                                <li><a href="https://twitter.com/FahimMushfiqur" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="https://www.facebook.com/mushfiqurrahman.fahim.3/" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                <li><a href="https://www.instagram.com/fahim_mushfiqur/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="mailto: rahmanf247@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                            </ul>
+                            <ul class="copyright">
+                                <li>&copy; Mushfiqur Rahman Fahim</li>
+                            </ul>
+                        </footer>
+    
+                </div>
+    
+            <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.scrollex.min.js"></script>
+                <script src="assets/js/jquery.scrolly.min.js"></script>
+                <script src="assets/js/browser.min.js"></script>
+                <script src="assets/js/breakpoints.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
+    
+        </body>
+    </html>

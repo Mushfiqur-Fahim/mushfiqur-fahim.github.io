@@ -2894,6 +2894,8 @@ input, select, textarea {
 
 			.spotlight {
 				display: block;
+				
+
 			}
 
 				.spotlight br {
@@ -2914,6 +2916,9 @@ input, select, textarea {
 					text-align: center;
 					width: 100%;
 				}
+				.spotlight .image2{
+					padding-left: 4rem;
+				}
 
 		}
 
@@ -2922,8 +2927,18 @@ input, select, textarea {
 			.spotlight .content {
 				padding: 3em 2em 1em 2em ;
 			}
+			/* .ebrahim{
+				-webkit-display: flex;
+				flex-direction: column;
+				flex-wrap: wrap; */
+			}
+			.spotlight .image2{
+				padding-left: 4rem;
+			}
+	
+			
 
-		}
+		
 
 /* Wrapper */
 
